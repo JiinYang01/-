@@ -1,0 +1,29 @@
+import numpy as np
+data_arr = np.loadtxt("asset.csv", delimiter=",", dtype=np.str)
+a = {'c':1, 'nc':2}
+x=data_arr.shape
+data_arr[data_arr=='G1']='1' 
+data_arr[data_arr=='G2']='2' 
+data_arr=data_arr.astype('int64')
+print("\t\t1인가구\t", "2인가구\t", "3인가구\t", "4인가구\t","5인가구이상")
+begin=1
+x = {'a':1,'b':2}
+k=np.zeros(5)
+a111=np.zeros(5)
+lookup= np.array([2, 3, 4, 5, 200])
+for i, j in enumerate(lookup):
+    data_p = data_arr[(data_arr[:,1] >= begin) & (data_arr[:,1] <j)]
+    a1=data_p[data_p[:,0]==x['a']]    
+    a2=data_p[data_p[:,0]==x['b']] 
+    k1=sum(a1[:,3]-a1[:,4])
+    k2=sum(a2[:,3]-a2[:,4])
+    k[i]=k1/len(a1)
+    a111[i]=k2/len(a2)
+    begin=j
+k=k.astype(np.int64)    
+k=k.astype(str)
+a111=a111.astype(np.int64)    
+a111=a111.astype(str)
+q=0
+print("수도권\t\t"+k[0]+"\t\t "+k[1]+"\t\t "+k[2]+"\t\t "+k[3]+"\t\t "+k[4]+"\t\t ")
+print("비수도권\t"+a111[0]+"\t\t "+a111[1]+"\t\t "+a111[2]+"\t\t "+a111[3]+"\t\t "+a111[4]+"\t\t ")

@@ -1,0 +1,199 @@
+<html>
+<head> 
+	
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,500,600|Roboto:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="css/flaticon.css">
+	
+<link rel="stylesheet" href="css/themify-icons.css">
+
+<link rel="stylesheet" href="css/bootstrap.css">
+	
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<link rel="stylesheet" href="css/nice-select.css">
+	
+<link rel="stylesheet" href="css/animate.min.css">
+	
+<link rel="stylesheet" href="css/owl.carousel.css">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="vendors/linericon/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+<link rel="stylesheet" href="vendors/animate-css/animate.css">
+<link rel="stylesheet" href="vendors/flaticon/flaticon.css">  
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+
+
+
+    
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+
+<link rel="stylesheet" type="text/css" href="styles/services.css">
+<link rel="stylesheet" type="text/css" href="styles/services_responsive.css">
+
+
+
+
+
+
+</head>
+<body>
+<header class="header_area">
+<div class="main_menu" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light">
+<div class="container box_1620">						
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+
+
+
+							<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="about.html">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="works.html">Works</a></li>
+								<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							</ul>
+ 							</div>
+</div>
+</nav>
+</div>
+</header>
+
+
+
+
+
+        <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					
+						<h2>My Works</h2>												
+					</div>
+				</div>
+            </div>
+</section>
+<br/><br/>
+<!-- Features -->
+
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="features_container d-flex flex-row flex-wrap align-items-start justify-content-between">
+						
+						<!-- Feature -->
+						<div class="feature">
+							<div class="feature_image"><img src="img/java.png" width=690 height=367 alt=""></div>
+							<div class="feature_content">
+								<div class="section_title"><h2>Java</h2></div>
+								<div class="feature_text">
+								
+
+<h4>work1 소스 코드</h4>
+<ul class="unordered-list">								
+<li><a href="career/Main.java" >메인 소스 코드 </a></li>
+
+<li><a href="career/Node.java" >노드 소스코드    </a></li>
+</ul>
+<br/>
+<h4>work2 소스 코드</h4>
+<ul class="unordered-list">	
+<li><a href="career/main1.java" >메인 소스 코드 </a></li>
+
+<li><a href="career/node1.java" >노드 소스 코드    </a></li>
+
+</ul>
+<br/>
+
+
+	
+								</div>
+							</div>
+						</div>
+
+						<!-- Feature -->
+						<div class="feature">
+							<div class="feature_image"><img src="img/python.jpg"  width=690 height=367   alt=""></div>
+							<div class="feature_content">
+								<div class="section_title"><h2>Python</h2></div>
+								<div class="feature_text">
+								<h4>인구 가구 분석 jupyter notebook파일</h4>
+
+								<ul class="unordered-list">								
+					<li><a href="career/2017204086_양지인.ipynb" >가구 분석 파일 </a></li>
+										</ul>
+<br/>
+<br/><br/>
+						<h4>work2 소스 코드</h4>
+					<ul class="unordered-list">	
+				<li><a href="career/과제설명.txt" > 분석 1 파일</a></li>
+
+				<li><a href="career/과제설명2.txt" >분석 2 파일   </a></li>
+
+						</ul>
+						
+									<br/>
+
+
+	
+								</div>
+							</div>
+						</div>
+
+						<!-- Feature -->
+						<div class="feature">
+							<div class="feature_image"><img src="img/html5.png" width=690 height=367 alt=""></div>
+							<div class="feature_content">
+								<div class="section_title"><h2>Html</h2></div>
+															
+								<div class="feature_text">
+<br/><br/>
+
+								<ul class="unordered-list">
+								<li><h2><a  href="career/과제1.html" >work1.html    </a></h2></li>
+
+<br/><br/>
+<li><a href="career/과제2.html" >work2.html    </a></li>
+<br/><br/>
+<li><a href="career/과제3.html" >work3.html    </a></li>
+</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+
+</body>
+</html>
+
+
+
+
+
+

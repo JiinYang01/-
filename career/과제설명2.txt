@@ -1,0 +1,53 @@
+import numpy as np
+data_arr = np.loadtxt("asset.csv", delimiter=",", dtype=np.str)
+a = {'c':1, 'nc':2}
+x=data_arr.shape
+data_arr[data_arr=='G1']='1' 
+data_arr[data_arr=='G2']='1' 
+data_arr=data_arr.astype('int64')
+print("\t\t      1인가구\t\t", "2인가구\t", "3인가구\t", "4인가구\t","5인가구이상")
+row_title_list =np.array (["20대\t", "30대\t", "40대\t", "50대\t","60대이상"]) 
+begin=1
+k1=np.zeros(5)
+k2=np.zeros(5)
+k3=np.zeros(5)
+k4=np.zeros(5)
+k5=np.zeros(5)
+lookup= np.array([2, 3, 4, 5, 200])
+lookup1= np.array([20, 30, 40, 50, 200])
+q=0
+for i, j in enumerate(lookup):
+    data_p = data_arr[(data_arr[:,1] >= begin) & (data_arr[:,1] <j)]
+    a1=data_p[(data_p[:,2] >=20) & (data_p[:,2] <30)]
+    a2=data_p[(data_p[:,2] >=30) & (data_p[:,2] <40)]
+    a3=data_p[(data_p[:,2] >=40) & (data_p[:,2] <50)]
+    a4=data_p[(data_p[:,2] >=50) & (data_p[:,2] <60)]
+    a5=data_p[(data_p[:,2] >=60)]
+    begin=j
+    k1[q]=sum(a1[:,3]-a1[:,4])/len(a1)
+    k2[q]=sum(a2[:,3]-a2[:,4])/len(a2)
+    k3[q]=sum(a3[:,3]-a3[:,4])/len(a3)
+    k4[q]=sum(a4[:,3]-a4[:,4])/len(a4)
+    k5[q]=sum(a5[:,3]-a5[:,4])/len(a5)
+    q=q+1
+row_title_list=row_title_list.astype(str)
+k1=k1.astype(np.int64)
+k1=k1.astype(np.str)
+k2=k2.astype(np.int64)
+k2=k2.astype(np.str)
+k3=k3.astype(np.int64)
+k3=k3.astype(np.str)
+k4=k4.astype(np.int64)
+k4=k4.astype(np.str)
+k5=k5.astype(np.int64)
+k5=k5.astype(np.str)
+
+for i in range(5):
+    print(row_title_list[i] +"\t\t"+k1[i]+"\t\t "+k2[i]+"\t\t "+k3[i]+"\t\t "+k4[i]+"\t\t "+k5[i])
+    
+
+
+    
+    
+   
+
